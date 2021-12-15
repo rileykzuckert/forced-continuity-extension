@@ -54,7 +54,7 @@ body_2 = "Your " + service_entry + " subscription expires today."
 
 # create the GUI for the user trial alert updates, sent out based upon how many days left in the trial
 if d3 > 1:
-    #time.sleep(10)
+    time.sleep(sleep_time_1)
     trial_update_notif = tk.Tk() # application name
     trial_update_notif.geometry("400x70") # adjust size of box
     trial_update_notif.title("Don't forget about your subscription!") # label
@@ -65,7 +65,7 @@ if d3 > 1:
         webbrowser.open_new(link)
     button = ttk.Button(trial_update_notif, text = "Manage subscription", command = open_link).grid(column = 1, row = 0)
 else:
-    time.sleep(10)
+    time.sleep(sleep_time_2)
     trial_update_notif = tk.Tk() # application name
     trial_update_notif.geometry("400x70") # adjust size of box
     trial_update_notif.title("Don't forget about your subscription!") # label
