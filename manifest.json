@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+"name": "trially",
+"description": "Subscription manager to keep track of trials and memberships to avoid being silently charged.",
+"version": "0.1",
+"icons": {
+"128": "128.png"
+},
+"app": {
+"urls": [
+"http://certification.googleapps.com/app-info/"
+],
+"launch": {
+"web_url": "http://certification.googleapps.com/"
+}
+},
+"permissions": [
+"unlimitedStorage",
+"notifications"
+]
+}
